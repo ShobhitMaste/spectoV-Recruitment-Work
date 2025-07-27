@@ -82,119 +82,251 @@
           </section>
         </section>
 
-<section class="video-promo">
-  <div class="video-container">
-    <h2 class="section-title">Experience defXV</h2>
-    <p class="section-subtitle">See the future through our AR glasses</p>
-    
-    <div class="video-wrapper">
-      <video class="product-video" controls poster="assets/video-poster.jpg">
-        <source src="assets/video2.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
+        <section class="video-promo">
+          <div class="video-container">
+            <h2 class="section-title">Experience defXV</h2>
+            <p class="section-subtitle">
+              See the future through our AR glasses
+            </p>
+
+            <div class="video-wrapper">
+              <video
+                class="product-video"
+                controls
+                poster="assets/video-poster.jpg"
+              >
+                <source src="assets/video2.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="container">
+            <h2>User Experiences</h2>
+            <p class="subtitle">Hear from early adopters of defXV AR glasses</p>
+
+            <div class="review-grid">
+              <div class="review-card">
+                <div class="reviewer">
+                  <div class="avatar">A</div>
+                  <div class="reviewer-info">
+                    <h4>Alex Chen</h4>
+                    <p>Tech Lead, Silicon Valley</p>
+                  </div>
+                </div>
+                <div class="review-content">
+                  <p>
+                    "defXV revolutionized our design process. The 4K holographic
+                    display makes 3D prototyping feel natural."
+                  </p>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="reviewer">
+                  <div class="avatar">M</div>
+                  <div class="reviewer-info">
+                    <h4>Maria Gonzalez</h4>
+                    <p>Medical Researcher</p>
+                  </div>
+                </div>
+                <div class="review-content">
+                  <p>
+                    "The gesture controls are game-changing for surgery
+                    simulations. Zero latency makes it feel real."
+                  </p>
+                </div>
+              </div>
+
+              <div class="review-card">
+                <div class="reviewer">
+                  <div class="avatar">R</div>
+                  <div class="reviewer-info">
+                    <h4>Raj Patel</h4>
+                    <p>Architecture Student</p>
+                  </div>
+                </div>
+                <div class="review-content">
+                  <p>
+                    "The AI mentor helped me master AR modeling in days. It's
+                    like having a professor in your glasses!"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+          <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p class="subtitle">Get answers about defXV AR Glasses</p>
+
+            <div class="faq-container">
+              <div class="faq-item">
+                <button class="faq-question">
+                  What's the field of view (FOV) of defXV glasses?
+                  <span class="toggle-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    defXV offers a 120° diagonal FOV with our patented waveguide
+                    technology, equivalent to human peripheral vision.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Is there SDK support for developers?
+                  <span class="toggle-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Yes! We provide a full Unity/Unreal SDK with documentation
+                    and sample projects to jumpstart AR development.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How long does the battery last?
+                  <span class="toggle-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    8 hours of continuous use with our graphene battery, or 2
+                    days of typical mixed usage. Charges fully in 45 minutes.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  What platforms are supported?
+                  <span class="toggle-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Windows, macOS, Android, and iOS with our companion app.
+                    Linux support coming Q2 2024.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-section">
+          <div class="container">
+            <h2>Contact Us</h2>
+            <p class="subtitle">Get in touch with our AR experts</p>
+
+            <div class="contact-grid">
+              <div class="contact-form">
+                <form id="defxv-contact">
+                  <div class="form-group">
+                    <input type="text" id="name" required />
+                    <label for="name">Your Name</label>
+                    <div class="underline"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <input type="email" id="email" required />
+                    <label for="email">Email Address</label>
+                    <div class="underline"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <select id="subject" required>
+                      <option value="" disabled selected></option>
+                      <option>Product Inquiry</option>
+                      <option>Developer Support</option>
+                      <option>Press/Media</option>
+                      <option>Enterprise Solutions</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <div class="underline"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <textarea id="message" rows="4" required></textarea>
+                    <label for="message">Your Message</label>
+                    <div class="underline"></div>
+                  </div>
+
+                  <button type="submit" class="submit-btn">
+                    Send Message
+                    <svg viewBox="0 0 24 24">
+                      <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+
+              <div class="contact-info">
+                <div class="info-card">
+                  <div class="info-icon">📍</div>
+                  <h4>Our Location</h4>
+                  <p>AR Innovation Hub<br />Silicon Valley, CA</p>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-icon">✉️</div>
+                  <h4>Email Us</h4>
+                  <p>hello@defxv.tech<br />support@defxv.tech</p>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-icon">📞</div>
+                  <h4>Call Us</h4>
+                  <p>+1 (555) AR-VISION<br />Mon-Fri, 9AM-5PM PST</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3 class="footer-logo">Sankalp</h3>
+      <p class="tagline">Empowering Coders, Enabling Futures</p>
+      <p class="mission">We bridge the gap between learning and industry success.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <ul>
+        <li class="contact-email">spectov.pvt.ltd@gmail.com</li>
+        <li class="contact-phone">+91 70428 60263</li>
+        <li class="contact-address">SpectoV Headquarters, Ghaziabad Loni UP, Chennai, India</li>
+      </ul>
     </div>
   </div>
-</section>
 
-<section class="reviews">
-  <div class="container">
-    <h2>User Experiences</h2>
-    <p class="subtitle">Hear from early adopters of defXV AR glasses</p>
-    
-    <div class="review-grid">
-
-      <div class="review-card">
-        <div class="reviewer">
-          <div class="avatar">A</div>
-          <div class="reviewer-info">
-            <h4>Alex Chen</h4>
-            <p>Tech Lead, Silicon Valley</p>
-          </div>
-        </div>
-        <div class="review-content">
-          <p>"defXV revolutionized our design process. The 4K holographic display makes 3D prototyping feel natural."</p>
-        </div>
-      </div>
-
-      <div class="review-card">
-        <div class="reviewer">
-          <div class="avatar">M</div>
-          <div class="reviewer-info">
-            <h4>Maria Gonzalez</h4>
-            <p>Medical Researcher</p>
-          </div>
-        </div>
-        <div class="review-content">
-          <p>"The gesture controls are game-changing for surgery simulations. Zero latency makes it feel real."</p>
-        </div>
-      </div>
-
-
-      <div class="review-card">
-        <div class="reviewer">
-          <div class="avatar">R</div>
-          <div class="reviewer-info">
-            <h4>Raj Patel</h4>
-            <p>Architecture Student</p>
-          </div>
-        </div>
-        <div class="review-content">
-          <p>"The AI mentor helped me master AR modeling in days. It's like having a professor in your glasses!"</p>
-        </div>
-      </div>
+  <div class="footer-bottom">
+    <p class="copyright">© 2025 SpectoV All rights reserved.</p>
+    <div class="legal-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
     </div>
   </div>
-</section>
-<!-- FAQ Section -->
-<section class="faq-section">
-  <div class="container">
-    <h2>Frequently Asked Questions</h2>
-    <p class="subtitle">Get answers about defXV AR Glasses</p>
-    
-    <div class="faq-container">
-
-      <div class="faq-item">
-        <button class="faq-question">
-          What's the field of view (FOV) of defXV glasses?
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>defXV offers a 120° diagonal FOV with our patented waveguide technology, equivalent to human peripheral vision.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          Is there SDK support for developers?
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes! We provide a full Unity/Unreal SDK with documentation and sample projects to jumpstart AR development.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          How long does the battery last?
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>8 hours of continuous use with our graphene battery, or 2 days of typical mixed usage. Charges fully in 45 minutes.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          What platforms are supported?
-          <span class="toggle-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Windows, macOS, Android, and iOS with our companion app. Linux support coming Q2 2024.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+</footer>
       </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

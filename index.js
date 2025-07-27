@@ -35,4 +35,34 @@ document.addEventListener('DOMContentLoaded', () => {
       item.classList.toggle('active');
     });
   });
+  const form = document.getElementById('defxv-contact');
+  
+
+  const formGroups = document.querySelectorAll('.form-group');
+  formGroups.forEach((group, index) => {
+    group.style.opacity = 0;
+    group.style.transform = 'translateY(20px)';
+    group.style.transition = `all 0.5s ease ${index * 0.1}s`;
+    
+    setTimeout(() => {
+      group.style.opacity = 1;
+      group.style.transform = 'translateY(0)';
+    }, 500 + (index * 100));
+  });
+
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+
+    alert('Thank you! Your message has been sent.');
+    form.reset();
+    
+
+    document.querySelectorAll('.form-group label').forEach(label => {
+      label.style.top = '10px';
+      label.style.fontSize = '1rem';
+      label.style.color = '#aaa';
+    });
+  });
 });
