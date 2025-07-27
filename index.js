@@ -1,4 +1,4 @@
-// Animate review cards on scroll
+
 document.addEventListener('DOMContentLoaded', () => {
   const reviewCards = document.querySelectorAll('.review-card');
   
@@ -18,5 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'all 0.6s ease-out';
     observer.observe(card);
+  });
+
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question.addEventListener('click', () => {
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item && otherItem.classList.contains('active')) {
+          otherItem.classList.remove('active');
+        }
+      });
+      
+      item.classList.toggle('active');
+    });
   });
 });

@@ -182,7 +182,6 @@ nav a:hover {
   color: #aaa;
 }
 
-/* Video Section - Pure CSS */
 .video-promo {
   padding: 80px 20px;
   background: #0a0a0a;
@@ -227,7 +226,6 @@ nav a:hover {
   background: #000;
 }
 
-/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -250,7 +248,6 @@ nav a:hover {
   }
 }
 
-/* Reviews Section */
 .reviews {
   padding: 80px 0;
   background: #0f0f0f;
@@ -329,4 +326,66 @@ nav a:hover {
 .review-content p {
   color: #ddd;
   line-height: 1.6;
+}
+.faq-section {
+  padding: 80px 0;
+  background: #0a0a0a;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.faq-question:hover {
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.toggle-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.faq-answer p {
+  padding: 0 20px 20px;
+  margin: 0;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+}
+
+.faq-item.active .toggle-icon {
+  transform: rotate(45deg);
 }
