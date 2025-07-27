@@ -14,4 +14,4 @@
 ### 3. Content Hierarchy
 - Restructured layout flow:
 
-- https://shobhitmaste.github.io/spectoV-Recruitment-Work/#buy
+https://shobhitmaste.github.io/spectoV-Recruitment-Work
