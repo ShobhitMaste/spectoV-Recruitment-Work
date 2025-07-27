@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Register GSAP plugins
+
   gsap.registerPlugin(ScrollTrigger);
 
-  // Hero section animations
+
   gsap.from('header h1', {
     opacity: 0,
     y: -20,
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     delay: 0.7
   });
 
-  // Features section animations
+
   gsap.from('.features-intro h2', {
     scrollTrigger: {
       trigger: '.features',
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ease: 'power2.out'
   });
 
-  // Video section animations
+
   gsap.from('.video-promo h2', {
     scrollTrigger: {
       trigger: '.video-promo',
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ease: 'power3.out'
   });
 
-  // Reviews section animations
+
   gsap.from('.reviews h2', {
     scrollTrigger: {
       trigger: '.reviews',
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ease: 'power2.out'
   });
 
-  // FAQ section animations
+
   gsap.from('.faq-section h2', {
     scrollTrigger: {
       trigger: '.faq-section',
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ease: 'power2.out'
   });
 
-  // Contact section animations
+
   gsap.from('.contact-section h2', {
     scrollTrigger: {
       trigger: '.contact-section',
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ease: 'power2.out'
   });
 
-  // Footer animation
+
   gsap.from('.site-footer', {
     scrollTrigger: {
       trigger: '.site-footer',
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ease: 'power2.out'
   });
 
-  // FAQ toggle functionality
+
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Form submission
+
   const form = document.getElementById('defxv-contact');
   form.addEventListener('submit', (e) => {
     e.preventDefault();
